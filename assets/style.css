@@ -1,0 +1,99 @@
+body {
+    font-size: 2.5vh;
+    margin: 0;
+    background-color: #121212; /* Slightly lighter black for better contrast */
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    font-size: 3vh;
+}
+
+#calculator {
+    width: auto;
+    height: auto;
+    padding: 1.5vh;
+    border: 5px solid #444;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: #1e1e1e; /* Dark gray for a cleaner look */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box {
+    text-align: right;
+    font-size: 2.8vh;
+    height: 5vh;
+    line-height: 3vh;
+    padding: 1em;
+    border: 2px solid #ffa500; /* Brighter orange for better visibility */
+    color: #ffffff;
+    border-radius: 15px;
+    background-color: #000000; /* Deep black */
+}
+
+#last_operation_history {
+    height: 2vh;
+    font-size: 1.8vh;
+    text-align: right;
+    padding-right: 1.5vh;
+    color: #b1b0b0;
+    background-color: #1e1e1e; /* Matches the calculator background */
+}
+
+button {
+    width: 9vh;
+    height: 9vh;
+    font-weight: bold;
+    font-size: 3vh;
+    color: #ffffff;
+    background-color: #555555; /* Slightly lighter for contrast */
+    border-radius: 50%;
+    border: 1px solid #333333;
+    transition: all 0.2s ease; /* Smooth hover effect */
+}
+
+#backspace_btn {
+    background-image: url("../assets/back_remove.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 1.7em;
+    background-color: #555555; /* Matches buttons for consistency */
+}
+
+button:hover {
+    background-color: #777777; /* Subtle lighter gray on hover */
+    cursor: pointer;
+    transform: scale(1.05); /* Slight scale-up effect */
+}
+
+.operator {
+    background-color: #ff8c00; /* Bright orange for operators */
+    color: #ffffff;
+}
+
+.operator:hover {
+    background-color: #ffd11a; /* Yellow for hover effect */
+    color: #000000; /* Contrast text color */
+}
+
+#equal_sign {
+    width: 100%;
+    border-radius: 15px;
+    background-color: #ff4500; /* Bold red for the equal button */
+    color: #ffffff;
+    font-size: 3vh;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+#equal_sign:hover {
+    background-color: #ff6347; /* Lighter red on hover */
+    transform: scale(1.05); /* Slight scale-up effect */
+}
